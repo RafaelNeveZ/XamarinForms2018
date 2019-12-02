@@ -60,6 +60,9 @@ namespace ControleXF.Master
         {
             Detail = new Controles.SliderSteperPage();
         }
-
+        private void GoSwitchPage(object sender, EventArgs e)
+        {
+            Detail = new Controles.SwitchPage();
+        }
     }
 }

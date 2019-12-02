@@ -20,6 +20,7 @@
                 <Button Text="Picker" Clicked="GoPicker"/>
                 <Button Text="SearchBar" Clicked="GoSearchBar"/>
                 <Button Text="SliderSteper" Clicked="GoSliderSteper"/>
+                <Button Text="SwitchPage" Clicked="GoSwitchPage"/>
 
             </StackLayout>
         </ContentPage>
