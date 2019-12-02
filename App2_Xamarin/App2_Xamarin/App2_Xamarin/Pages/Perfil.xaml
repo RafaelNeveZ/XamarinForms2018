@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App2_Xamarin.Pages.Perfil">
+    <ContentPage.Content>
+        <ScrollView>
+            
+        <StackLayout Spacing="0">
+            <RelativeLayout VerticalOptions="Start" 
+                            HeightRequest="300" >
+                <Image Source="Fundo.png"
+                       Aspect="Fill"
+                       RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width,
+                    Factor=1}"/>
+                <Image Source="Perfil.png"
+                       x:Name="perfil"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+                    Property=Width, 
+                    Factor=0.5, 
+                    Constant=-60}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.2}"
+                       WidthRequest="120"/>
+                <Label Text="Miguel de Icaza"
+                       TextColor="Red"
+                       FontSize="32"
+                       RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView,
+                   ElementName=perfil,
+                    Property=X,
+                    Factor=1}"
+                       RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView,
+                    Property=Y,
+                     ElementName=perfil,
+                    Factor=1,
+                    Constant=180}"/>
+            </RelativeLayout>
+            <Grid HeightRequest="120" BackgroundColor="#0D1F2D">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" 
+                             Grid.Row="0"
+                             Spacing="0"
+                             HorizontalOptions="CenterAndExpand" 
+                             VerticalOptions="CenterAndExpand">
+                    <Label TextColor="White" FontSize="32" Text="18"/>
+                    <Label TextColor="White" FontSize="20" Text="anos" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" 
+                             Grid.Row="0"
+                             Spacing="0"
+                             HorizontalOptions="CenterAndExpand" 
+                             VerticalOptions="CenterAndExpand">
+                    <Label TextColor="White" FontSize="32" Text="10/01/2000"/>
+                    <Label TextColor="White" FontSize="20" Text="nasceu" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Grid>
+            <StackLayout VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="FillAndExpand" 
+                         BackgroundColor="White" 
+                         Padding="30">
+                <Label Text="Magna mauris cubilia habitasse nullam venenatis pretium, non condimentum dictum congue vivamus, augue mollis netus tortor velit. Elit justo quisque nisi nostra donec orci nascetur, mattis finibus commodo praesent odio quis venenatis habitant, nullam duis nec gravida velit est. Nisi proin risus montes sodales vel bibendum conubia, nullam feugiat ultrices quis metus parturient ullamcorper sit, enim tortor odio hendrerit duis iaculis. Justo pellentesque neque iaculis viverra mollis, vehicula at commodo sem auctor nunc, magna turpis fames metus."/>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

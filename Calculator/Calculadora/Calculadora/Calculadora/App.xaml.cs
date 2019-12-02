@@ -10,7 +10,8 @@ namespace Calculadora
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Calculadora.Tipos.Padrao());
+
         }
 
         protected override void OnStart()

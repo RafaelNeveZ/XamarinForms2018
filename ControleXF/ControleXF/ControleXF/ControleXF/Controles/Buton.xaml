@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ControleXF.Controles.Buton">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Botão" 
+                    TextColor="Blue"
+                    FontSize="24"
+                    BorderColor="Red"
+                    CornerRadius="20"
+                    BorderWidth="5"
+                    BackgroundColor="White"/>
+                <Button Text="Default"/>
+                <ImageButton BackgroundColor="Transparent" Source="btn.png" HeightRequest="100" HorizontalOptions="Center" Clicked="ImageButton_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
