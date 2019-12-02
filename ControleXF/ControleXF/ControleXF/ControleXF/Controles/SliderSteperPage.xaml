@@ -7,7 +7,24 @@
              x:Class="ControleXF.Controles.SliderSteperPage">
     <ContentPage.Content>
         <StackLayout>
-            <Slider />
+            <Slider 
+                x:Name="SL"
+                Minimum="0"
+                Maximum="100"
+                ValueChanged="SL_ValueChanged"
+                />
+            <Label
+                x:Name="Lab"
+                />
+            <Stepper
+                x:Name="ST"
+                Minimum="0"
+                Maximum="100"
+                ValueChanged="ST_ValueChanged"
+                />
+            <Label
+                x:Name="Lab2"
+                />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

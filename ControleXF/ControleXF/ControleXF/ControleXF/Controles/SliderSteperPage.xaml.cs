@@ -16,5 +16,20 @@ namespace ControleXF.Controles
         {
             InitializeComponent();
         }
+
+
+        private void SL_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            Lab.Text = e.NewValue.ToString();
+            ST.Value = e.NewValue;
+            
+        }
+
+        private void ST_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            Lab2.Text = e.NewValue.ToString();
+            SL.Value = e.NewValue;
+
+        }
     }
 }
