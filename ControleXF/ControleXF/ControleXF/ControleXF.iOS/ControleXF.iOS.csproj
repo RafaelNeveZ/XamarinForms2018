@@ -133,4 +133,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\btn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\logoCarre.png" />
+    <BundleResource Include="Resources\usb%401x.jpg" />
+    <BundleResource Include="Resources\usb%402x.jpg" />
+    <BundleResource Include="Resources\usb%403x.jpg" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ControleXF.Controles.ImagePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="Container">
+            <!--Fill ela cresce e e não ta nem ai so preenche a tela-->
+            <!--ApectFIll Aumenta o maxmipossivel mas mantem a proporção-->
+            <!--AspectFIt Ela fica do tamanho que ela é, só diminui, mas nunca aumenta-->
+            <Label Text="Internet"/>
+            <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlvwLZUCVordMaUwgRYDqOeQ7zBFwOL8pYMFZKk2o7iEw5zJce"
+                Aspect="AspectFit"
+                   IsOpaque="True"
+                   x:Name="IMG1"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

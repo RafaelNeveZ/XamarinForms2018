@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ControleXF.Controles.WebViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="EndSite" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Ok" x:Name="OkBT" Clicked="OkBT_Clicked"/>
+                <Button Text="Proximo" x:Name="PrBT" Clicked="PrBT_Clicked" IsEnabled="False"/>
+                <Button Text="Voltar" x:Name="VoBT" Clicked="VoBT_Clicked" IsEnabled="True"/>
+            </StackLayout>
+            <WebView 
+                x:Name="Navegador"
+                Source="http://www.google.com.br"
+                Navigated="WebView_Navigated"
+                Navigating="WebView_Navigating"
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="FillAndExpand">
+            </WebView>
+            <Label Text="" x:Name="LB_Status"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

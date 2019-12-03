@@ -21,6 +21,10 @@
                 <Button Text="SearchBar" Clicked="GoSearchBar"/>
                 <Button Text="SliderSteper" Clicked="GoSliderSteper"/>
                 <Button Text="SwitchPage" Clicked="GoSwitchPage"/>
+                <Button Text="ImagepAge" Clicked="GoImagePage"/>
+                <Button Text="ListViewPage" Clicked="GoListView"/>
+                <Button Text="TableView" Clicked="GoTableView"/>
+                <Button Text="WebView" Clicked="GoWebView"/>
 
             </StackLayout>
         </ContentPage>

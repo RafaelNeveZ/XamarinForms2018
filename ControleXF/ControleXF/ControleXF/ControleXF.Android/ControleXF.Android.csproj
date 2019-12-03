@@ -85,7 +85,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\usb.jpg" />
+    <AndroidResource Include="Resources\drawable-ldpi\usb.jpg" />
+    <AndroidResource Include="Resources\drawable-mdpi\usb.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\usb.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\usb.jpg" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\usb.jpg" />
+    <Content Include="Resources\drawable\logoCarre.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ControleXF\ControleXF.csproj">
       <Project>{C801B77B-603D-429D-8905-111BCAE88C83}</Project>

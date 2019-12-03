@@ -64,5 +64,21 @@ namespace ControleXF.Master
         {
             Detail = new Controles.SwitchPage();
         }
+        private void GoImagePage(object sender, EventArgs e)
+        {
+            Detail = new Controles.ImagePage();
+        }
+        private void GoListView(object sender, EventArgs e)
+        {
+            Detail = new Controles.ListViewPage();
+        }
+        private void GoTableView(object sender, EventArgs e)
+        {
+            Detail = new Controles.TableViewPage();
+        }
+        private void GoWebView(object sender, EventArgs e)
+        {
+            Detail = new Controles.WebViewPage();
+        }
     }
 }
