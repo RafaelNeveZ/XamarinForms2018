@@ -8,6 +8,9 @@
              x:Class="ControleXF.Master.Master">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
+            <ScrollView>
+                
+            
             <StackLayout>
                 <Button Text="Activity Indicator" Clicked="GoActivityIndicator"/>
                 <Button Text="Progress Bar" Clicked="GoProgressBar"/>
@@ -25,8 +28,8 @@
                 <Button Text="ListViewPage" Clicked="GoListView"/>
                 <Button Text="TableView" Clicked="GoTableView"/>
                 <Button Text="WebView" Clicked="GoWebView"/>
-
-            </StackLayout>
+                </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
