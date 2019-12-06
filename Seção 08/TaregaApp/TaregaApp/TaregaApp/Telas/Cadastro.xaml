@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TaregaApp.Telas.Cadastro">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Nome" FontAttributes="Bold"/>
+            <Entry  x:Name="TxtNome"/>
+            <Label Text="Prioridade" FontAttributes="Bold"/>
+            <StackLayout x:Name="SLPrioridades">
+                <StackLayout Orientation="Horizontal" >
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelecionada"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="p4.png"/>
+                    <Label Text="Urgente e importante!" HorizontalOptions="FillAndExpand" TextColor="LightGray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelecionada"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="p3.png"/>
+                    <Label Text="Urgente e não importante!" HorizontalOptions="FillAndExpand" TextColor="LightGray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelecionada"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="p2.png"/>
+                    <Label Text="Não Urgente e importante!" HorizontalOptions="FillAndExpand" TextColor="LightGray"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PrioridadeSelecionada"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="p1.png"/>
+                    <Label Text="Não Urgente e não importante!" HorizontalOptions="FillAndExpand" TextColor="LightGray"/>
+                </StackLayout>
+            </StackLayout>
+            <Button x:Name="OKBT" Clicked="OKBT_Clicked" HorizontalOptions="End" Text="OK" 
+                    TextColor="White" BackgroundColor="Blue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+<!--<Image>   Caso queira botar pra uma plataforma especifica
+                        <Image.Source>
+                            <OnPlatform x:TypeArguments="ImageSource">
+                                <On Platform="Android, iOS" Value="4.png"/>
+                                <On Platform="UWP" Value="Resources/4.png"/>
+                            </OnPlatform>
+                        </Image.Source>
+                    </Image>-->
