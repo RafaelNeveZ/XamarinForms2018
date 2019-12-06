@@ -16,7 +16,10 @@ namespace TaregaApp.Telas
         public Inicio()
         {
             InitializeComponent();
-            DataHoje.Text = DateTime.Now.DayOfWeek.ToString() + ", " + DateTime.Now.ToString("dd/MM");
+            CultureInfo culture = new CultureInfo("pt-BR");
+            string data = DateTime.Now.ToString("dddd, dd {0} MMMM {0} yyyy", culture);
+
+            DataHoje.Text = string.Format(data,"de");
             CarregarLista();
         }
 
