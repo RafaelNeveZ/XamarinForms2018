@@ -21,6 +21,35 @@ namespace CellApp.Menu
         {
 
             Detail = new NavigationPage(new TextCellPage());
+            IsPresented = false;
+        }
+
+        private void GoImageCell(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new ImageCellPage());
+            IsPresented = false;
+        }
+
+        private void GoEntryCell(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new EntryCellPage());
+            IsPresented = false;
+        }
+
+        private void GoSwitchCell(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new SwitchCellPage());
+            IsPresented = false;
+        }
+
+        private void GoViewCell(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new ViewCellPage());
+            IsPresented = false;
         }
     }
 }

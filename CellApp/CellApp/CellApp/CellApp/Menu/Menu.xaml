@@ -10,6 +10,11 @@
         <ContentPage Title="Menu">
             <StackLayout>
                 <Button Text="Text Cell" Clicked="GoTextCell"/>
+                <Button Text="Image Cell" Clicked="GoImageCell"/>
+                <Button Text="Entry Cell" Clicked="GoEntryCell"/>
+                <Button Text="Switch Cell" Clicked="GoSwitchCell"/>
+                <Button Text="View Cell" Clicked="GoViewCell"/>
+
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>
