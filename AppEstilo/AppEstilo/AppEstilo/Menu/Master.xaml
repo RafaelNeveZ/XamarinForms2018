@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ini="clr-namespace:AppEstilo"
+             mc:Ignorable="d"
+             x:Class="AppEstilo.Menu.Master">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Spacing="5" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Button Text="Implicity Style" Clicked="GoImplicitStyle"/> 
+                <Button Text="Explictty Style" Clicked="GoExplicttStyle"/>
+                <Button Text="Global Style" Clicked="GoGlobalStylePage"/>
+                <Button Text="Heranca" Clicked="GoHerancaPage"/>
+                <Button Text="Dinamyc" Clicked="GoDynamcyPage"/>
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+            <NavigationPage>
+            <x:Arguments>
+                <ini:MainPage/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
