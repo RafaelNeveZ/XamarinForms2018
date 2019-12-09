@@ -131,8 +131,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Perfil_foto.jpg" />
+    <Content Include="Resources\Perfil_foto.jpg" />
     <BundleResource Include="Resources\Add_button.png" />
-    <Content Include="Resources\Perfil_fundo.png" />
+    <Content Include="Resources\perfilFundo.png" />
   </ItemGroup>
 </Project>

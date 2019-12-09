@@ -51,5 +51,19 @@ namespace CellApp.Menu
             Detail = new NavigationPage(new ViewCellPage());
             IsPresented = false;
         }
+
+        private void GoListView(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new ListViewPage());
+            IsPresented = false;
+        }
+
+        private void GoListViewButton(object sender, EventArgs e)
+        {
+
+            Detail = new NavigationPage(new ListViewButtonPage());
+            IsPresented = false;
+        }
     }
 }

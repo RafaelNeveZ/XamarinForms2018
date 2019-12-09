@@ -4,7 +4,7 @@ using System.Text;
 using Xamarin.Forms;
 namespace CellApp.Modelo
 {
-    class Funcionario
+    public class Funcionario
     {
         public string Nome { get; set; }
         public string Cargo { get; set; }

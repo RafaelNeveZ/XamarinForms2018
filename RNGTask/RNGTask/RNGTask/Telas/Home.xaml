@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RNGTask.Telas.Home">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="0">
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" HeightRequest="350">
+
+                <Image 
+                    AbsoluteLayout.LayoutFlags="SizeProportional"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    x:Name="PerfilFundo"
+                    Aspect="Fill"
+                    Source="Perfil_fundo.png"/>
+                <Frame
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,0.30"
+                    x:Name="PerfilFoto"
+                    WidthRequest="80"
+                    HeightRequest="80"
+                    CornerRadius="100"
+                    Padding="0"
+                    IsClippedToBounds="True"
+                    >
+                    <Image Source="Perfil_foto.jpg"/>
+                </Frame>
+                <Label 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,0.7"
+                    Text="RAFAEL NEVES" TextColor="White" FontSize="20" FontAttributes="Bold" />
+                <Label 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.03,0.95"
+                    Text="Segunda-Feira, 9 de Dezembro de 2019" TextColor="White" FontSize="12" FontAttributes="Italic" />
+            </AbsoluteLayout>
+            <ListView x:Name="ListaTasks" HasUnevenRows="True" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="75" Orientation="Horizontal" Padding="10,5,10,5">
+                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                                    <Label Text="{Binding Nome}"  />
+                                    <Label Text="{Binding Detalhe}" TextColor="LightGray" VerticalOptions="FillAndExpand" />
+                                </StackLayout>
+                                <StackLayout  VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+                                    <Label Text="19/12/2019" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                    <Label Text="13:00" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

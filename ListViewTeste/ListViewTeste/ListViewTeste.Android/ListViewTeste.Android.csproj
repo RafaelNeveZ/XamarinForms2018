@@ -85,17 +85,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\drawable\perfilFundo.png" />
+    <Content Include="Resources\drawable\Perfil_foto.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ListViewTeste\ListViewTeste.csproj">
       <Project>{F027F73A-C8C9-40C6-9FE7-01C65B87088C}</Project>
       <Name>ListViewTeste</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Perfil_foto.jpg" />
-    <AndroidResource Include="Resources\drawable\Add_button.png" />
-    <Content Include="Resources\drawable\Perfil_fundo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

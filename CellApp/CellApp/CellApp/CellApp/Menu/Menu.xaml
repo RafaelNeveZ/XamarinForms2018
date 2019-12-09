@@ -8,13 +8,16 @@
              x:Class="CellApp.Menu.Menu">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <StackLayout>
+            <StackLayout Spacing="5">
+                <Label Text="Celulas"/>
                 <Button Text="Text Cell" Clicked="GoTextCell"/>
                 <Button Text="Image Cell" Clicked="GoImageCell"/>
                 <Button Text="Entry Cell" Clicked="GoEntryCell"/>
                 <Button Text="Switch Cell" Clicked="GoSwitchCell"/>
                 <Button Text="View Cell" Clicked="GoViewCell"/>
-
+                <Label Text="Components"/>
+                <Button Text="List Cell" Clicked="GoListView"/>
+                <Button Text="List Cell Button" Clicked="GoListViewButton"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

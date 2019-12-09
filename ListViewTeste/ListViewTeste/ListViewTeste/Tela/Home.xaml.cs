@@ -16,25 +16,8 @@ namespace ListViewTeste.Tela
         public Home()
         {
             InitializeComponent();
-            CultureInfo brasil = new CultureInfo("pt-BR");
-            dataHoje.Text = FirstCharToUpper(DateTime.Now.ToString("dddd, dd/MM/yyyy", brasil));
-
-            List<string> lista = new List<string>();
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-            lista.Add("Rafael");
-
-            listaTarefas.ItemsSource = lista;
+         //   CultureInfo brasil = new CultureInfo("pt-BR");
+         //   dataHoje.Text = FirstCharToUpper(DateTime.Now.ToString("dddd, dd/MM/yyyy", brasil));
            
         }
         public string FirstCharToUpper(string input)
@@ -47,9 +30,6 @@ namespace ListViewTeste.Tela
             }
         }
 
-        private void AddButtonPressed(object sender, EventArgs e)
-        {
-            DisplayAlert("ADD", "ADD NEW","OK");
-        }
+      
     }
 }
